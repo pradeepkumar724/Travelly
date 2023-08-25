@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 3.6rem;
+  font-family: "Pattaya";
+  font-weight: normal;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 3.8rem;
+  opacity: 0.7;
+}
+h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  opacity: 0.6;
+}
+h4,
+h5 {
+  font-size: 2.2rem;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #131c27;
+  padding: 0.4rem 1.1rem;
+}
+nav ul li a:hover {
+  border: 1px solid white;
+  /* font-size: 1.9rem; */
+  padding: 0.4rem 1.1rem;
+  outline: none;
+  border-radius: 0.4rem;
+  opacity: 0.6;
+  transition: 0.7s;
+}
+body {
+  font-family: "Inconsolata", monospace;
+  font-family: "Mukta", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+button {
+  padding: 1rem 4rem;
+  background: #4c6e97;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Nav section with hero */
+.main-head {
+  background-color: #131c27;
+  color: #ffffff;
+}
+nav {
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  padding: 1rem;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  /* font-family: "Pattaya", sans-serif; */
+}
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    url(./icons/suraj-kardile-OjBMfvfJ9N4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h3 {
+  padding: 2rem;
+}
+/* Benefits Section */
+
+#locations {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+    url("./icons/raimond-klavins-OCZALdYIv_Y-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.locations-head {
+  width: 90%;
+  /* background-color: lightblue; */
+  margin: auto;
+}
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+  background-image: linear-gradient(
+    to top,
+    #3b41c5 0%,
+    #a981bb 49%,
+    #ffc8a9 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 6rem;
+}
+.locations-head h6 {
+  padding: 3rem 0rem;
+  /* background: linear-gradient(rgb(4, 4, 4), rgb(233, 245, 5));
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+/* The benefits section */
+
+.benfets-head {
+  background: #343c44;
+  min-height: 30vh;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.benfets-head h3 {
+  padding: 1rem;
+}
+.icons {
+  max-width: 20%;
+  margin: 2rem;
+  color: white;
+}
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  flex: 1 1 25rem;
+  /* min-height: 35vh; */
+  margin: 2rem 5rem;
+  text-align: center;
+}
+.card h4,
+p {
+  padding: 1.4rem;
+}
+
+.cardimg {
+  background-color: #343c44;
+}
+
+/* Media Quary */
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 65%;
+  }
+  body {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+  }
+
+  #locations {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+      url("./icons/pexels-saikat-ghosh-914128.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .locations-head h2 {
+    padding: 1rem 0rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+    /* background-image: linear-gradient(
+      -225deg,
+      #ff3cac 0%,
+      #562b7c 52%,
+      #2b86c5 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text; */
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    font-weight: 100;
+    font-size: 2.8rem;
+  }
+  .locations-head h6 {
+    font-size: 2rem;
+  }
+}
